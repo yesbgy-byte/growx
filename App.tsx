@@ -39,26 +39,25 @@ const App: React.FC = () => {
       {/* Sticky Header */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${showStickyNav || currentView === 'report' ? 'bg-white/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'}`}>
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <div 
+          <div
             className={`font-extrabold text-2xl tracking-tighter cursor-pointer ${showStickyNav || currentView === 'report' ? 'text-slate-900' : 'text-white'}`}
             onClick={navigateToHome}
           >
-            Titan Workers
+            GROWX
           </div>
           <div className="flex gap-4 items-center">
-             {currentView === 'report' && (
-                <button 
-                  onClick={navigateToHome}
-                  className="text-sm font-semibold text-slate-600 hover:text-orange-600 transition hidden md:block"
-                >
-                  메인으로 돌아가기
-                </button>
-             )}
-            <a href="#contact" className={`px-5 py-2 rounded-full font-bold text-sm transition-all ${
-              showStickyNav || currentView === 'report'
-                ? 'bg-orange-600 text-white hover:bg-orange-700' 
+            {currentView === 'report' && (
+              <button
+                onClick={navigateToHome}
+                className="text-sm font-semibold text-slate-600 hover:text-orange-600 transition hidden md:block"
+              >
+                메인으로 돌아가기
+              </button>
+            )}
+            <a href="#contact" className={`px-5 py-2 rounded-full font-bold text-sm transition-all ${showStickyNav || currentView === 'report'
+                ? 'bg-orange-600 text-white hover:bg-orange-700'
                 : 'bg-white/20 text-white border border-white/30 hover:bg-white/30'
-            }`}>
+              }`}>
               도입 문의
             </a>
           </div>
@@ -77,7 +76,7 @@ const App: React.FC = () => {
       ) : (
         <SampleReport onBack={navigateToHome} />
       )}
-      
+
       <Footer />
     </div>
   );

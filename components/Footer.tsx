@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
-          <h2 className="text-2xl font-bold text-white mb-2">Titan Workers</h2>
+          <h2 className="text-2xl font-bold text-white mb-2">GROWX</h2>
           <p className="text-sm">AI 자동화 특화 기업교육 서비스</p>
         </div>
         <div className="flex gap-8 text-sm">
@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           <a href="#" className="hover:text-white transition">문의하기</a>
         </div>
         <div className="mt-8 md:mt-0 text-xs text-slate-600">
-          &copy; 2025 Titan Workers. All rights reserved.
+          &copy; 2025 GROWX. All rights reserved.
         </div>
       </div>
     </footer>

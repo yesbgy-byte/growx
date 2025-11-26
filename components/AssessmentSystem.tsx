@@ -66,7 +66,7 @@ const AssessmentSystem: React.FC = () => {
             성장은 느낌이 아니라 <span className="text-orange-600">데이터</span>로 증명합니다
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-            타이탄 워커스는 단순 만족도가 아닌, 정량적 핵심 실무 역량 지표를 통해<br className="hidden md:block" />
+            GROWX는 단순 만족도가 아닌, 정량적 핵심 실무 역량 지표를 통해<br className="hidden md:block" />
             임직원의 AX 역량 변화를 명확하게 측정하고 ROI를 산출합니다.
           </p>
         </div>
@@ -77,8 +77,8 @@ const AssessmentSystem: React.FC = () => {
             <button
               onClick={() => setActiveTab('team')}
               className={`px-6 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 transition-all ${activeTab === 'team'
-                  ? 'bg-white text-orange-600 shadow-sm'
-                  : 'text-slate-500 hover:text-slate-700'
+                ? 'bg-white text-orange-600 shadow-sm'
+                : 'text-slate-500 hover:text-slate-700'
                 }`}
             >
               <Users size={18} /> 팀/조직 역량 지표 (8개)
@@ -86,8 +86,8 @@ const AssessmentSystem: React.FC = () => {
             <button
               onClick={() => setActiveTab('individual')}
               className={`px-6 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 transition-all ${activeTab === 'individual'
-                  ? 'bg-white text-orange-600 shadow-sm'
-                  : 'text-slate-500 hover:text-slate-700'
+                ? 'bg-white text-orange-600 shadow-sm'
+                : 'text-slate-500 hover:text-slate-700'
                 }`}
             >
               <User size={18} /> 개인 역량 지표 (8개)

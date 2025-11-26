@@ -8,14 +8,14 @@ const Methodology: React.FC = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-orange-600 font-bold tracking-wider text-sm uppercase">Why Titan Workers?</span>
+          <span className="text-orange-600 font-bold tracking-wider text-sm uppercase">Why GROWX?</span>
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mt-3 mb-6 leading-tight">
             우리 산업의 <span className="underline decoration-orange-500/30 decoration-8 underline-offset-4">실제 문제</span>를<br />
             AI로 해결하고 싶다면?
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
             단순 툴 사용법 강의로는 현업의 복잡한 문제를 해결할 수 없습니다.<br />
-            타이탄 워커스는 <strong>'실전 AI PBL(Project Based Learning)'</strong>로 실질적이고 정량적인 성과를 창출합니다.
+            GROWX는 <strong>'실전 AI PBL(Project Based Learning)'</strong>로 실질적이고 정량적인 성과를 창출합니다.
           </p>
         </div>
 
