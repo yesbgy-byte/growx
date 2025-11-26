@@ -70,22 +70,22 @@ const Methodology: React.FC = () => {
                 <div className="bg-slate-800 p-5 rounded-xl flex items-center gap-4 text-left shadow-lg border border-orange-500/30">
                   <CheckCircle2 className="text-orange-500 shrink-0" size={28} />
                   <div>
-                    <p className="font-bold text-white text-lg">기초 AI 교육의 한계 해결</p>
-                    <p className="text-sm text-slate-400">단순 도구 사용을 넘어 실제 AI 기능 구축 역량 확보</p>
+                    <p className="font-bold text-white text-lg">실무 중심 AI 역량 완비</p>
+                    <p className="text-sm text-slate-400">단순 활용을 넘어, 실제 작동하는 AI 기능을 직접 구현</p>
                   </div>
                 </div>
                 <div className="bg-slate-800 p-5 rounded-xl flex items-center gap-4 text-left shadow-lg border border-orange-500/30">
                   <CheckCircle2 className="text-orange-500 shrink-0" size={28} />
                   <div>
-                    <p className="font-bold text-white text-lg">명확한 교육 성과 측정</p>
-                    <p className="text-sm text-slate-400">임원진 보고용 구체적 성과물과 ROI 지표 확보</p>
+                    <p className="font-bold text-white text-lg">증명 가능한 성과와 ROI</p>
+                    <p className="text-sm text-slate-400">경영진이 납득할 수 있는 구체적 결과물과 수치 제공</p>
                   </div>
                 </div>
                 <div className="bg-slate-800 p-5 rounded-xl flex items-center gap-4 text-left shadow-lg border border-orange-500/30">
                   <CheckCircle2 className="text-orange-500 shrink-0" size={28} />
                   <div>
-                    <p className="font-bold text-white text-lg">예산 대비 확실한 교육 가치</p>
-                    <p className="text-sm text-slate-400">외주 개발 대신 내부 역량으로 해결하는 비용 절감</p>
+                    <p className="font-bold text-white text-lg">비용 절감과 조직 역량 내재화</p>
+                    <p className="text-sm text-slate-400">외주 비용은 줄이고, 조직 내부의 AI 해결 역량은 강화</p>
                   </div>
                 </div>
               </div>
