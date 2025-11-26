@@ -75,7 +75,7 @@ const Curriculum: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="text-orange-500 font-bold tracking-wider text-sm">CURRICULUM</span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">직무별 맞춤형 AX 로드맵</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">직무별 맞춤형 AX & DX 로드맵</h2>
           <p className="text-slate-400">전 직무를 아우르는 실무 밀착형 커리큘럼으로 조직의 디지털 전환을 완성합니다.</p>
         </div>
 
