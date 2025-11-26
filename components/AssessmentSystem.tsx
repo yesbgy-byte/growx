@@ -67,7 +67,7 @@ const AssessmentSystem: React.FC = () => {
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto">
             GROWX는 단순 만족도가 아닌, 정량적 핵심 실무 역량 지표를 통해<br className="hidden md:block" />
-            임직원의 AX 역량 변화를 명확하게 측정하고 ROI를 산출합니다.
+            임직원의 AX/DX 역량 변화를 명확하게 측정하고 ROI를 산출합니다.
           </p>
         </div>
 

@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
             <div>
               <h3 className="text-3xl font-bold mb-4">지금 바로<br />문의하세요</h3>
               <p className="text-slate-400 mb-8 leading-relaxed">
-                가장 빠르고 확실한 AX 교육,<br />
+                가장 빠르고 확실한 AX/DX 교육,<br />
                 GROWX가 데이터에 기반한<br />
                 최적의 솔루션을 제안해 드립니다.
               </p>

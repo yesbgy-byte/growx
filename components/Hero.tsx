@@ -14,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigateToReport }) => {
       <div className="container mx-auto px-4 py-12 relative z-10 flex flex-col items-center text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 font-semibold mb-8 animate-fade-in-up">
           <Zap size={16} />
-          <span>2025 HRD 트렌드 반영 완벽 커리큘럼</span>
+          <span>AX & DX 혁신을 이끄는 실무 중심 기업교육</span>
         </div>
 
         <h1 className="text-4xl md:text-6xl font-extrabold mb-8 leading-tight tracking-tight break-keep">
