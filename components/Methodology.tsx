@@ -15,7 +15,7 @@ const Methodology: React.FC = () => {
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
             단순 툴 사용법 강의로는 현업의 복잡한 문제를 해결할 수 없습니다.<br />
-            타이탄 워커스는 <strong>'실전 AI PBL(Project Based Learning)'</strong>로 실질적인 ROI를 창출합니다.
+            타이탄 워커스는 <strong>'실전 AI PBL(Project Based Learning)'</strong>로 실질적이고 정량적인 성과를 창출합니다.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ const Methodology: React.FC = () => {
                 <Target size={32} />
               </div>
 
-              <h3 className="text-xl font-bold text-slate-900 mb-2">증명 가능한 성과와 ROI</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">증명 가능한 정량적 성과</h3>
               <p className="text-slate-600 text-sm mb-8 min-h-[40px]">
                 경영진이 납득할 수 있는 구체적 결과물과 수치 제공합니다.
               </p>
@@ -65,7 +65,7 @@ const Methodology: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-orange-500 shrink-0 mt-0.5" size={18} />
-                  <p className="text-sm font-bold text-slate-800">조직 성과/ROI 지표 확보</p>
+                  <p className="text-sm font-bold text-slate-800">조직 성과 및 정량 지표 확보</p>
                 </div>
               </div>
             </div>
