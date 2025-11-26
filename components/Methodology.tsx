@@ -19,74 +19,77 @@ const Methodology: React.FC = () => {
           </p>
         </div>
 
-        {/* Comparison Section (Benchmarked) */}
-        <div className="max-w-6xl mx-auto mb-20">
-          <div className="grid md:grid-cols-2 gap-0 shadow-2xl rounded-3xl overflow-hidden border border-slate-200">
-            {/* Left: General Education */}
-            <div className="bg-slate-100 p-10 md:p-12 flex flex-col items-center text-center relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-2 bg-slate-300"></div>
-              <h3 className="text-2xl font-bold text-slate-500 mb-8">기존 일반 생성형 AI 교육</h3>
+        {/* Redesigned Comparison Section */}
+        <div className="max-w-7xl mx-auto mb-20">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-slate-100 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-slate-200 to-slate-300 group-hover:from-orange-400 group-hover:to-red-500 transition-colors"></div>
+              <div className="mb-6 bg-orange-50 w-16 h-16 rounded-2xl flex items-center justify-center text-orange-600 group-hover:scale-110 transition-transform">
+                <Briefcase size={32} />
+              </div>
 
-              <div className="space-y-6 w-full max-w-sm">
-                <div className="bg-white p-4 rounded-xl flex items-center gap-4 text-left shadow-sm opacity-70">
-                  <XCircle className="text-slate-400 shrink-0" size={24} />
-                  <div>
-                    <p className="font-bold text-slate-600">일반적인 예시 데이터</p>
-                    <p className="text-xs text-slate-400">우리 회사 업무와 무관한 공용 예제</p>
-                  </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">실무 중심 AI 역량 완비</h3>
+              <p className="text-slate-600 text-sm mb-8 min-h-[40px]">
+                단순 활용을 넘어, 실제 작동하는 AI 기능을 직접 구현합니다.
+              </p>
+
+              <div className="space-y-3 bg-slate-50 p-4 rounded-xl">
+                <div className="flex items-start gap-3 opacity-60">
+                  <XCircle className="text-slate-400 shrink-0 mt-0.5" size={18} />
+                  <p className="text-xs text-slate-500 line-through decoration-slate-400">단순 툴 기능/프롬프트 습득</p>
                 </div>
-                <div className="bg-white p-4 rounded-xl flex items-center gap-4 text-left shadow-sm opacity-70">
-                  <XCircle className="text-slate-400 shrink-0" size={24} />
-                  <div>
-                    <p className="font-bold text-slate-600">단순 툴 기능 습득</p>
-                    <p className="text-xs text-slate-400">프롬프트 작성법 등 기능 위주</p>
-                  </div>
-                </div>
-                <div className="bg-white p-4 rounded-xl flex items-center gap-4 text-left shadow-sm opacity-70">
-                  <XCircle className="text-slate-400 shrink-0" size={24} />
-                  <div>
-                    <p className="font-bold text-slate-600">개인 리터러시 향상</p>
-                    <p className="text-xs text-slate-400">조직 전체의 성과로 연결 부족</p>
-                  </div>
-                </div>
-                <div className="bg-white p-4 rounded-xl flex items-center gap-4 text-left shadow-sm opacity-70">
-                  <XCircle className="text-slate-400 shrink-0" size={24} />
-                  <div>
-                    <p className="font-bold text-slate-600">교육 완료 후 종료</p>
-                    <p className="text-xs text-slate-400">지속적인 활용 및 팔로우업 부재</p>
-                  </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-orange-500 shrink-0 mt-0.5" size={18} />
+                  <p className="text-sm font-bold text-slate-800">현업 문제 해결 솔루션 구축</p>
                 </div>
               </div>
             </div>
 
-            {/* Right: Titan Workers PBL */}
-            <div className="bg-slate-900 p-10 md:p-12 flex flex-col items-center text-center relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-orange-600 to-red-600"></div>
-              <div className="absolute -right-20 -top-20 w-64 h-64 bg-orange-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            {/* Card 2 */}
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-slate-100 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-slate-200 to-slate-300 group-hover:from-orange-400 group-hover:to-red-500 transition-colors"></div>
+              <div className="mb-6 bg-orange-50 w-16 h-16 rounded-2xl flex items-center justify-center text-orange-600 group-hover:scale-110 transition-transform">
+                <Target size={32} />
+              </div>
 
-              <h3 className="text-2xl font-bold text-white mb-8">산업특화 AI PBL 교육</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">증명 가능한 성과와 ROI</h3>
+              <p className="text-slate-600 text-sm mb-8 min-h-[40px]">
+                경영진이 납득할 수 있는 구체적 결과물과 수치 제공합니다.
+              </p>
 
-              <div className="space-y-6 w-full max-w-sm relative z-10">
-                <div className="bg-slate-800 p-5 rounded-xl flex items-center gap-4 text-left shadow-lg border border-orange-500/30">
-                  <CheckCircle2 className="text-orange-500 shrink-0" size={28} />
-                  <div>
-                    <p className="font-bold text-white text-lg">실무 중심 AI 역량 완비</p>
-                    <p className="text-sm text-slate-400">단순 활용을 넘어, 실제 작동하는 AI 기능을 직접 구현</p>
-                  </div>
+              <div className="space-y-3 bg-slate-50 p-4 rounded-xl">
+                <div className="flex items-start gap-3 opacity-60">
+                  <XCircle className="text-slate-400 shrink-0 mt-0.5" size={18} />
+                  <p className="text-xs text-slate-500 line-through decoration-slate-400">개인 리터러시 향상에 그침</p>
                 </div>
-                <div className="bg-slate-800 p-5 rounded-xl flex items-center gap-4 text-left shadow-lg border border-orange-500/30">
-                  <CheckCircle2 className="text-orange-500 shrink-0" size={28} />
-                  <div>
-                    <p className="font-bold text-white text-lg">증명 가능한 성과와 ROI</p>
-                    <p className="text-sm text-slate-400">경영진이 납득할 수 있는 구체적 결과물과 수치 제공</p>
-                  </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-orange-500 shrink-0 mt-0.5" size={18} />
+                  <p className="text-sm font-bold text-slate-800">조직 성과/ROI 지표 확보</p>
                 </div>
-                <div className="bg-slate-800 p-5 rounded-xl flex items-center gap-4 text-left shadow-lg border border-orange-500/30">
-                  <CheckCircle2 className="text-orange-500 shrink-0" size={28} />
-                  <div>
-                    <p className="font-bold text-white text-lg">비용 절감과 조직 역량 내재화</p>
-                    <p className="text-sm text-slate-400">외주 비용은 줄이고, 조직 내부의 AI 해결 역량은 강화</p>
-                  </div>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-slate-100 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-slate-200 to-slate-300 group-hover:from-orange-400 group-hover:to-red-500 transition-colors"></div>
+              <div className="mb-6 bg-orange-50 w-16 h-16 rounded-2xl flex items-center justify-center text-orange-600 group-hover:scale-110 transition-transform">
+                <Settings size={32} />
+              </div>
+
+              <h3 className="text-xl font-bold text-slate-900 mb-2">비용 절감과 조직 역량 내재화</h3>
+              <p className="text-slate-600 text-sm mb-8 min-h-[40px]">
+                외주 비용은 줄이고, 조직 내부의 AI 해결 역량은 강화합니다.
+              </p>
+
+              <div className="space-y-3 bg-slate-50 p-4 rounded-xl">
+                <div className="flex items-start gap-3 opacity-60">
+                  <XCircle className="text-slate-400 shrink-0 mt-0.5" size={18} />
+                  <p className="text-xs text-slate-500 line-through decoration-slate-400">일회성 교육/외주 의존</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-orange-500 shrink-0 mt-0.5" size={18} />
+                  <p className="text-sm font-bold text-slate-800">내부 전문가 양성 및 자립</p>
                 </div>
               </div>
             </div>
