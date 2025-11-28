@@ -183,7 +183,7 @@ const AssessmentSystem: React.FC = () => {
                 <p className="text-slate-600 pl-11">
                   교육 전(회색)과 후(주황색)의 데이터를 비교하여,
                   {activeTab === 'team' ? ' 우리 조직이 ' : ' 임직원 개인이 '}
-                  얼마나 '타이탄'에 가까워졌는지 시각적으로 확인합니다.
+                  얼마나 역량이 향상되었는지 시각적으로 확인합니다.
                 </p>
               </div>
             </div>
@@ -229,14 +229,14 @@ const AssessmentSystem: React.FC = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
                 </div>
                 <h4 className="text-lg font-bold text-slate-900 mb-2">세부 평가 지표는 도입 시 공개됩니다</h4>
-                <p className="text-slate-600 text-sm mb-6">
-                  8대 핵심 역량의 상세 정의와 측정 기준은<br />
-                  도입 문의 및 계약 체결 시 제공해 드립니다.
-                </p>
-                <a href="#contact" className="inline-flex items-center justify-center px-6 py-2.5 bg-slate-900 text-white text-sm font-bold rounded-full hover:bg-slate-800 transition-colors">
-                  도입 문의하기
-                </a>
-              </div>
+                 className="text-slate-600 text-sm mb-6">
+                   핵심 역량의 상세 정의와 측정 기준은<br />
+                    의 및 계약 체결 시 제공해 드립니다.
+                      
+                    f="#contact" className="inline-flex items-center justify-center px-6 py-2.5 bg-slate-900 text-white text-sm font-bold rounded-full hover:bg-slate-800 transition-colors">
+                   문의하기
+                a>
+              div>
             </div>
           </div>
         </div>
