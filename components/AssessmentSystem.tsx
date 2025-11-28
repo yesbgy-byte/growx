@@ -50,6 +50,24 @@ const teamDetails = [
   { id: 8, name: "현업 적용 시도 횟수", description: "교육 기간/후 일정 기간 동안, 실제 업무에 적용해 본 실험·시도 건수", traits: ["자기주도성", "전이도"] },
 ];
 
+// Custom Tick Component for blurred labels
+const CustomTick = ({ x, y, payload }: any) => {
+  return (
+    <text
+      x={x}
+      y={y}
+      dy={4}
+      textAnchor="middle"
+      fill="#475569"
+      fontSize={13}
+      fontWeight={600}
+      style={{ filter: 'blur(4px)', userSelect: 'none' }}
+    >
+      {payload.value}
+    </text>
+  );
+};
+
 const AssessmentSystem: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'individual' | 'team'>('team');
 
@@ -106,7 +124,7 @@ const AssessmentSystem: React.FC = () => {
             <ResponsiveContainer width="100%" height="100%">
               <RadarChart cx="50%" cy="50%" outerRadius="70%" data={currentData}>
                 <PolarGrid stroke="#cbd5e1" />
-                <PolarAngleAxis dataKey="subject" tick={{ fill: '#475569', fontSize: 13, fontWeight: 600 }} />
+                <PolarAngleAxis dataKey="subject" tick={<CustomTick />} />
                 <PolarRadiusAxis angle={30} domain={[0, 100]} tick={false} axisLine={false} />
                 <Radar
                   name="교육 전 (Pre)"
@@ -210,7 +228,7 @@ const AssessmentSystem: React.FC = () => {
                 <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4 text-slate-600">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
                 </div>
-                <h4 className="text-lg font-bold text-slate-900 mb-2">세부 평가 지표는 대외비입니다</h4>
+                <h4 className="text-lg font-bold text-slate-900 mb-2">세부 평가 지표는 도입 시 공개됩니다</h4>
                 <p className="text-slate-600 text-sm mb-6">
                   8대 핵심 역량의 상세 정의와 측정 기준은<br />
                   도입 문의 및 계약 체결 시 제공해 드립니다.
